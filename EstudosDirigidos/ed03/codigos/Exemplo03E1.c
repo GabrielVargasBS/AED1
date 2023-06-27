@@ -23,10 +23,10 @@ void method01 ( )
 {
     // definir dado
        int x = 0;
-  
+
     // identificar
        IO_id ( "Exemplo03E1 - Method01 - v0.0" );
-    
+
     // ler do teclado o valor inicial
        x = IO_readint ( "Entrar com uma quantidade: " );
 
@@ -39,7 +39,7 @@ void method01 ( )
            // passar ao proximo valor
               x  = x - 1;
        } // end while
-    
+
     // encerrar
        IO_pause ( "Apertar ENTER para continuar" );
 
@@ -54,10 +54,10 @@ void method02 ( )
     // definir dado
        int x = 0;
        int y = 0;
-  
+
     // identificar
        IO_id ( "Exemplo03E1 - Method02 - v0.0" );
-    
+
     // ler do teclado o valor inicial
        x = IO_readint ( "Entrar com uma quantidade: " );
 
@@ -71,7 +71,7 @@ void method02 ( )
            // passar ao proximo valor
               y  = y - 1;
        } // end while
-    
+
     // encerrar
        IO_pause ( "Apertar ENTER para continuar" );
 
@@ -86,10 +86,10 @@ void method03 ( )
     // definir dado
        int x = 0;
        int y = 0;
-  
+
     // identificar
        IO_id ( "Exemplo03E1 - Method03 - v0.0" );
-    
+
     // ler do teclado o valor inicial
        x = IO_readint ( "Entrar com uma quantidade: " );
 
@@ -103,7 +103,7 @@ void method03 ( )
            // passar ao proximo valor
               y  = y + 1;
        } // end while
-    
+
     // encerrar
        IO_pause ( "Apertar ENTER para continuar" );
 
@@ -118,10 +118,10 @@ void method04 ( )
     // definir dado
        int x = 0;
        int y = 0;
-  
+
     // identificar
        IO_id ( "Exemplo03E1 - Method04 - v0.0" );
-    
+
     // ler do teclado o valor inicial
        x = IO_readint ( "Entrar com uma quantidade: " );
 
@@ -132,7 +132,7 @@ void method04 ( )
            // mostrar valor atual
               IO_printf ( "%d\n", y );
         } // end for
-    
+
     // encerrar
        IO_pause ( "Apertar ENTER para continuar" );
 
@@ -147,10 +147,10 @@ void method05 ( )
     // definir dado
        int x = 0;
        int y = 0;
-  
+
     // identificar
        IO_id ( "Exemplo03E1 - Method05 - v0.0" );
-    
+
     // ler do teclado o valor inicial
        x = IO_readint ( "Entrar com uma quantidade: " );
 
@@ -161,7 +161,7 @@ void method05 ( )
            // mostrar valor atual
               IO_printf ( "%d\n", y );
         } // end for
-    
+
     // encerrar
        IO_pause ( "Apertar ENTER para continuar" );
 
@@ -179,10 +179,10 @@ void method06 ( )
 
        chars palavra = IO_new_chars ( STR_SIZE );
        int tamanho = 0;
-  
+
     // identificar
        IO_id ( "Exemplo03E1 - Method06 - v0.0" );
-    
+
     // ler do teclado o valor inicial
        palavra = IO_readstring ( "Entrar com uma palavra: " );
 
@@ -196,7 +196,7 @@ void method06 ( )
            // mostrar valor atual
               IO_printf ( "%d: [%c]\n", y, palavra [y] );
         } // end for
-    
+
     // encerrar
        IO_pause ( "Apertar ENTER para continuar" );
 
@@ -214,10 +214,10 @@ void method07 ( )
        int y = 0;
        char palavra [STR_SIZE];
        int tamanho = 0;
-  
+
     // identificar
        IO_id ( "Exemplo03E1 - Method07 - v0.0" );
-    
+
     // ler do teclado o valor inicial
        IO_printf ( "Entrar com uma palavra: " );
        scanf ( "%s", palavra );
@@ -232,7 +232,7 @@ void method07 ( )
            // mostrar valor atual
               IO_printf ( "%d: [%c]\n", y, palavra [y] );
         } // end for
-    
+
     // encerrar
        IO_pause ( "Apertar ENTER para continuar" );
 
@@ -248,10 +248,10 @@ void method08 ( )
        int superior = 0;
        int inferior = 0;
        int x        = 0;
-  
+
     // identificar
        IO_id ( "Exemplo03E1 - Method08 - v0.0" );
-    
+
     // ler do teclado o valor inicial
        inferior = IO_readint ( "Limite inferior do intervalo: " );
        superior = IO_readint ( "Limite superior do intervalo: " );
@@ -262,7 +262,7 @@ void method08 ( )
            // mostrar valor atual
               IO_printf ( "%d\n", x );
         } // end for
-    
+
     // encerrar
        IO_pause ( "Apertar ENTER para continuar" );
 
@@ -279,10 +279,10 @@ void method09 ( )
        double inferior = 0.0;
        double passo    = 0.0;
        double x        = 0.0;
-  
+
     // identificar
        IO_id ( "Exemplo03E1 - Method09 - v0.0" );
-    
+
     // ler do teclado o valor inicial
        inferior = IO_readdouble ( "Limite inferior do intervalo: ");
        superior = IO_readdouble ( "Limite superior do intervalo: ");
@@ -294,7 +294,7 @@ void method09 ( )
            // mostrar valor atual
               IO_printf ( "%lf\n", x );
         } // end for
-    
+
     // encerrar
        IO_pause ( "Apertar ENTER para continuar" );
 
@@ -311,10 +311,10 @@ void method10 ( )
        double inferior = 0.0;
        double passo    = 0.0;
        double x        = 0.0;
-  
+
     // identificar
        IO_id ( "Exemplo03E1 - Method10 - v0.0" );
-    
+
     // ler do teclado o valor inicial
        inferior = IO_readdouble ( "Limite inferior do intervalo: ");
 
@@ -329,14 +329,14 @@ void method10 ( )
        {
            passo = IO_readdouble ( "Variacao no intervalo (passo): ");
        } while ( passo <= 0.0 );
- 
-    //       inicio        teste          variacao 
+
+    //       inicio        teste          variacao
        for ( x = inferior; x <= superior; x = x + passo )
        {
            // mostrar valor atual
               IO_printf ( "%lf\n", x );
         } // end for
-    
+
     // encerrar
        IO_pause ( "Apertar ENTER para continuar" );
 
@@ -353,16 +353,16 @@ void method11 ( )
        int tamanho = 0;
 
        chars palavra = IO_new_chars ( STR_SIZE );
-  
+
     // identificar
        IO_id ( "Exemplo03E1 - Method11 - v0.0" );
-    
+
     // ler do teclado o valor inicial
        palavra = IO_readstring ( "Entrar com uma palavra: " );
 
     // repetir para cada letra
        tamanho = strlen ( palavra );
- 
+
     //       inicio     teste    variacao
        for ( x = 0; x < tamanho; x = x + 1 )
        {
@@ -391,16 +391,16 @@ void method12 ( )
        int quantidade = 0;
 
        chars palavra = IO_new_chars ( STR_SIZE );
-  
+
     // identificar
        IO_id ( "Exemplo03E1 - Method12 - v0.0" );
-    
+
     // ler do teclado o valor inicial
        palavra = IO_readstring ( "Entrar com uma palavra: " );
 
     // repetir para cada letra
        tamanho = strlen ( palavra );
- 
+
     //       inicio     teste    variacao
        for ( x = 0; x < tamanho; x = x + 1 )
        {
@@ -410,7 +410,7 @@ void method12 ( )
                     // mostrar caractere atual e quantidade
                        quantidade = quantidade + 1;
                        IO_printf ( "%d: [%c]\n", x, palavra [x] );
-                       
+
                 } // end if
         } // end for
 
@@ -418,7 +418,7 @@ void method12 ( )
 
        IO_printf ("%s%d", "\nTotal de minusculas: ", quantidade );
        IO_printf ( "\n" );
-       
+
     // encerrar
        IO_pause ( "Apertar ENTER para continuar" );
 
@@ -436,16 +436,16 @@ void method13 ( )
        int quantidade = 0;
 
        chars palavra = IO_new_chars ( STR_SIZE );
-  
+
     // identificar
        IO_id ( "Exemplo03E1 - Method13 - v0.0" );
-    
+
     // ler do teclado o valor inicial
        palavra = IO_readstring ( "Entrar com uma palavra: " );
 
     // repetir para cada letra
        tamanho = strlen ( palavra );
- 
+
     //       inicio       teste   variacao
        for ( x = tamanho; x >= 0; x = x - 1 )
        {
@@ -455,7 +455,7 @@ void method13 ( )
                     // mostrar caractere atual e quantidade
                        quantidade = quantidade + 1;
                        IO_printf ( "%d: [%c]\n", x, palavra [x] );
-                       
+
                 } // end if
         } // end for
 
@@ -463,7 +463,7 @@ void method13 ( )
 
        IO_printf ("%s%d", "\nTotal de minusculas: ", quantidade );
        IO_printf ( "\n" );
-       
+
     // encerrar
        IO_pause ( "Apertar ENTER para continuar" );
 
@@ -481,16 +481,16 @@ void method14 ( )
        int quantidade = 0;
 
        chars caracteres = IO_new_chars ( STR_SIZE );
-  
+
     // identificar
        IO_id ( "Exemplo03E1 - Method14 - v0.0" );
-    
+
     // ler do teclado o valor inicial
        caracteres = IO_readstring ( "Entrar com uma cadeia de caracteres: " );
 
     // repetir para cada caractere
        tamanho = strlen ( caracteres );
- 
+
     //       inicio     teste    variacao
        for ( x = 0; x < tamanho; x = x + 1 )
        {
@@ -501,7 +501,7 @@ void method14 ( )
                     // mostrar caractere atual e quantidade
                        quantidade = quantidade + 1;
                        IO_printf ( "%d: [%c]\n", x, caracteres [x] );
-                       
+
                 } // end if
         } // end for
 
@@ -509,7 +509,7 @@ void method14 ( )
 
        IO_printf ("%s%d", "\nTotal de letras: ", quantidade );
        IO_printf ( "\n" );
-       
+
     // encerrar
        IO_pause ( "Apertar ENTER para continuar" );
 
@@ -527,16 +527,16 @@ void method15 ( )
        int quantidade = 0;
 
        chars caracteres = IO_new_chars ( STR_SIZE );
-  
+
     // identificar
        IO_id ( "Exemplo03E1 - Method15 - v0.0" );
-    
+
     // ler do teclado o valor inicial
        caracteres = IO_readstring ( "Entrar com uma cadeia de caracteres: " );
 
     // repetir para cada caractere
        tamanho = strlen ( caracteres );
- 
+
     //       inicio       teste   variacao
        for ( x = tamanho; x >= 0; x = x - 1 )
        {
@@ -546,7 +546,7 @@ void method15 ( )
                     // mostrar caractere atual e quantidade
                        quantidade = quantidade + 1;
                        IO_printf ( "%d: [%c]\n", x, caracteres [x] );
-                       
+
                 } // end if
         } // end for
 
@@ -554,7 +554,7 @@ void method15 ( )
 
        IO_printf ("%s%d", "\nTotal de digitos: ", quantidade );
        IO_printf ( "\n" );
-       
+
     // encerrar
        IO_pause ( "Apertar ENTER para continuar" );
 
@@ -572,16 +572,16 @@ void method16 ( )
        int quantidade = 0;
 
        chars caracteres = IO_new_chars ( STR_SIZE );
-  
+
     // identificar
        IO_id ( "Exemplo03E1 - Method16 - v0.0" );
-    
+
     // ler do teclado o valor inicial
        caracteres = IO_readstring ( "Entrar com uma cadeia de caracteres: " );
 
     // repetir para cada caractere
        tamanho = strlen ( caracteres );
- 
+
     //       inicio     teste    variacao
        for ( x = 0; x < tamanho; x = x + 1 )
        {
@@ -593,7 +593,7 @@ void method16 ( )
                     // mostrar caractere atual e quantidade
                        quantidade = quantidade + 1;
                        IO_printf ( "%d: [%c]\n", x, caracteres [x] );
-                       
+
                 } // end if
         } // end for
 
@@ -601,7 +601,7 @@ void method16 ( )
 
        IO_printf ("%s%d", "\nTotal de caracteres especiais: ", quantidade );
        IO_printf ( "\n" );
-       
+
     // encerrar
        IO_pause ( "Apertar ENTER para continuar" );
 
@@ -622,13 +622,13 @@ void method17 ( )
        int x          = 0;      // variavel nula
        int quantidade = 0;      // contador da quantidade de numeros a serem exibidos
        int numeros [ 80 ];      // vetor de numeros inteiros
-  
+
     // identificar
        IO_id ( "Exemplo03E1 - Method17 - v0.0" );
-    
+
     // ler do teclado valores do intervalo
        a = IO_readint ( "Limite inferior do intervalo: " );
-       b = IO_readint ( "Limite superior do intervalo: " );  
+       b = IO_readint ( "Limite superior do intervalo: " );
 
     // testar se intervalo valido
        while ( a >= b )
@@ -639,11 +639,11 @@ void method17 ( )
                a = IO_readint ( "Limite inferior do intervalo: " );
                b = IO_readint ( "Limite superior do intervalo: " );
           } // end if
-       } // end while    
+       } // end while
 
     // ler do teclado quantidade de repeticoes
        n = IO_readint ( "Quantidade de valores para teste: " );
-    
+
     // testar se quantidade e' valida
        while ( n <= 0 )
           {
@@ -653,11 +653,11 @@ void method17 ( )
                   n = IO_readint ( "Quantidade de valores para teste: " );
                   IO_printf ( "\n" );
              } // end if
-          } // end while 
+          } // end while
 
     // repetir n vezes
        do
-       {        
+       {
          // ler valor para teste
             IO_printf ( "\nDigite o valor para a posicao %d: ", i );
             IO_scanf ("%d", &numeros [ i ] );
@@ -666,10 +666,10 @@ void method17 ( )
          // controle da quantidade
             i = i + 1;
 
-        } while ( n > i );      
+        } while ( n > i );
 
-    // mostrar numeros armazenados 
-    
+    // mostrar numeros armazenados
+
        for ( i = 0; x < n; i = i + 1, x = x + 1)
        {
            // verificar intervalo
@@ -692,7 +692,7 @@ void method17 ( )
 
        IO_printf ("%s%d", "\nTotal de multiplos de 5 no intervalo estabelecido: ", quantidade );
        IO_printf ( "\n" );
-       
+
     // encerrar
        IO_pause ( "Apertar ENTER para continuar" );
 
@@ -713,13 +713,13 @@ void method18 ( )
        int x          = 0;      // variavel nula
        int quantidade = 0;      // contador da quantidade de numeros a serem exibidos
        int numeros [ 80 ];      // vetor de numeros inteiros
-  
+
     // identificar
        IO_id ( "Exemplo03E1 - Method18 - v0.0" );
-    
+
     // ler do teclado valores do intervalo
        a = IO_readint ( "Limite real inferior do intervalo: " );
-       b = IO_readint ( "Limite real superior do intervalo: " );  
+       b = IO_readint ( "Limite real superior do intervalo: " );
 
     // testar se intervalo valido
        while ( a >= b )
@@ -730,11 +730,11 @@ void method18 ( )
                a = IO_readint ( "Limite real inferior do intervalo: " );
                b = IO_readint ( "Limite real superior do intervalo: " );
           } // end if
-       } // end while    
+       } // end while
 
     // ler do teclado quantidade de repeticoes
        n = IO_readint ( "Quantidade de valores para teste: " );
-    
+
     // testar se quantidade e' valida
        while ( n <= 0 )
           {
@@ -744,11 +744,11 @@ void method18 ( )
                   n = IO_readint ( "Quantidade de valores para teste: " );
                   IO_printf ( "\n" );
              } // end if
-          } // end while 
+          } // end while
 
     // repetir n vezes
        do
-       {        
+       {
          // ler valor para teste
             IO_printf ( "\nDigite o valor para a posicao %d: ", i );
             IO_scanf ("%d", &numeros [ i ] );
@@ -757,17 +757,17 @@ void method18 ( )
          // controle da quantidade
             i = i + 1;
 
-        } while ( n > i );      
+        } while ( n > i );
 
-    // mostrar numeros armazenados 
-    
+    // mostrar numeros armazenados
+
        for ( i = 0; x < n; i = i + 1, x = x + 1)
        {
            // verificar intervalo
               if ( ( a <= numeros [ i ] ) && ( numeros [ i ] <= b ) )
                {
                    // verificar se multiplo de 5
-                      if ( ( numeros [ i ] % 5 == 0 ) && 
+                      if ( ( numeros [ i ] % 5 == 0 ) &&
                            ( ! ( numeros [ i ] % 3 == 0 ) ) )
                        {
                            IO_printf ( "\n" );
@@ -784,7 +784,7 @@ void method18 ( )
 
        IO_printf ("%s%d", "\nTotal de multiplos de 5 e nao multiplos de 3 no intervalo estabelecido: ", quantidade );
        IO_printf ( "\n" );
-       
+
     // encerrar
        IO_pause ( "Apertar ENTER para continuar" );
 
@@ -805,13 +805,13 @@ void method19 ( )
        int x             = 0;      // variavel nula
        int    quantidade = 0;      // contador da quantidade de numeros a serem exibidos
        double numeros [ 80 ];      // vetor de numeros reais
-  
+
     // identificar
        IO_id ( "Exemplo03E1 - Method19 - v0.0" );
-    
+
     // ler do teclado valores do intervalo
        a = IO_readdouble ( "Limite inferior do intervalo: " );
-       b = IO_readdouble ( "Limite superior do intervalo: " );  
+       b = IO_readdouble ( "Limite superior do intervalo: " );
 
     // testar se intervalo valido
        while ( a >= b )
@@ -822,11 +822,11 @@ void method19 ( )
                a = IO_readdouble ( "Limite inferior do intervalo: " );
                b = IO_readdouble ( "Limite superior do intervalo: " );
           } // end if
-       } // end while    
+       } // end while
 
     // ler do teclado quantidade de repeticoes
        n = IO_readdouble ( "Quantidade de valores para teste: " );
-    
+
     // testar se quantidade e' valida
        while ( n <= 0 )
           {
@@ -836,11 +836,11 @@ void method19 ( )
                   n = IO_readdouble ( "Quantidade de valores para teste: " );
                   IO_printf ( "\n" );
              } // end if
-          } // end while 
+          } // end while
 
     // repetir n vezes
        do
-       {        
+       {
          // ler valor para teste
             IO_printf ( "\nDigite o valor para a posicao %d: ", i );
             IO_scanf  ("%lf", &numeros [ i ] );
@@ -849,14 +849,14 @@ void method19 ( )
          // controle da quantidade
             i = i + 1;
 
-        } while ( n > i );      
+        } while ( n > i );
 
-    // mostrar numeros armazenados    
+    // mostrar numeros armazenados
        for ( i = 0; x < n; i = i + 1, x = x + 1 )
        {
            // verificar intervalo
               if ( ( a < numeros [ i ] ) && ( numeros [ i ] < b ) )
-               {                    
+               {
                    // verificar se parte inteira e' impar
                       if ( ! ( (int) numeros [ i ] % 2 == 0 ) )
                        {
@@ -874,7 +874,7 @@ void method19 ( )
 
        IO_printf ("%s%lf%s%lf%s%d", "\nTotal de numeros com parte inteira impar no intervalo (", a," : ",b,"): ", quantidade );
        IO_printf ( "\n" );
-       
+
     // encerrar
        IO_pause ( "Apertar ENTER para continuar" );
 
@@ -895,13 +895,13 @@ void method20 ( )
        int x             = 0;      // variavel nula
        int    quantidade = 0;      // contador da quantidade de numeros a serem exibidos
        double numeros [ 80 ];      // vetor de numeros reais
-  
+
     // identificar
        IO_id ( "Exemplo03E1 - Method20 - v0.0" );
-    
+
     // ler do teclado valores do intervalo
        a = IO_readdouble ( "Limite inferior do intervalo (maior que 0): " );
-       b = IO_readdouble ( "Limite superior do intervalo (menor que 1): " );  
+       b = IO_readdouble ( "Limite superior do intervalo (menor que 1): " );
 
     // testar se intervalo valido
 
@@ -911,7 +911,7 @@ void method20 ( )
           {
                IO_printf ( "\nIntervalo inexistente!\n\n" );
                a = IO_readdouble ( "Limite inferior do intervalo (maior que 0): " );
-               b = IO_readdouble ( "Limite superior do intervalo (menor que 1): " );  
+               b = IO_readdouble ( "Limite superior do intervalo (menor que 1): " );
           } // end if
 
           else
@@ -920,14 +920,14 @@ void method20 ( )
               {
                   IO_printf ( "\nIntervalo invalido!\n\n" );
                   a = IO_readdouble ( "Limite inferior do intervalo (maior que 0): " );
-                  b = IO_readdouble ( "Limite superior do intervalo (menor que 1): " );  
+                  b = IO_readdouble ( "Limite superior do intervalo (menor que 1): " );
               } // end if
           } // end else
           } // end while
 
     // ler do teclado quantidade de repeticoes
        n = IO_readdouble ( "Quantidade de valores para teste: " );
-    
+
     // testar se quantidade e' valida
        while ( n <= 0 )
           {
@@ -937,11 +937,11 @@ void method20 ( )
                   n = IO_readdouble ( "Quantidade de valores para teste: " );
                   IO_printf ( "\n" );
              } // end if
-          } // end while 
+          } // end while
 
     // repetir n vezes
        do
-       {        
+       {
          // ler valor para teste
             IO_printf ( "\nDigite o valor para a posicao %d: ", i );
             IO_scanf  ("%lf", &numeros [ i ] );
@@ -950,15 +950,15 @@ void method20 ( )
          // controle da quantidade
             i = i + 1;
 
-        } while ( n > i );      
+        } while ( n > i );
 
-    // mostrar numeros armazenados    
+    // mostrar numeros armazenados
        for ( i = 0; x < n; i = i + 1, x = x + 1 )
        {
            // verificar se parte fracionaria esta' fora do intervalo
-              if ( ( a >= ( numeros [ i ] - (int) numeros [ i ] ) ) || 
+              if ( ( a >= ( numeros [ i ] - (int) numeros [ i ] ) ) ||
                    ( b <= ( numeros [ i ] - (int) numeros [ i ] ) ) )
-               {                    
+               {
                    IO_printf ( "\n" );
                    IO_printf ( "%s%d%s%lf", "[", i, "] ", numeros [ i ] );
                    IO_printf ("\n");
@@ -971,14 +971,14 @@ void method20 ( )
 
        IO_printf ("%s%lf%s%lf%s%d", "\nTotal de numeros com parte fracionaria fora do intervalo (", a," : ",b,"): ", quantidade );
        IO_printf ( "\n" );
-       
+
     // encerrar
        IO_pause ( "Apertar ENTER para continuar" );
 
 } // end method20 ( )
 
 /**
- MethodE1 - Separar em outra cadeia e mostrar 
+ MethodE1 - Separar em outra cadeia e mostrar
             todos os simbolos nao alfanumericos
  */
 
@@ -991,36 +991,42 @@ void methodE1 ( )
 
        chars caracteres = IO_new_chars ( STR_SIZE );
        chars especiais  = IO_new_chars ( STR_SIZE );
-  
+       chars simbolo    = IO_new_chars ( STR_SIZE );
+
+       strcpy ( simbolo, "" );
+       strcpy ( especiais, "" );
+
     // identificar
        IO_id ( "Exemplo03E1 - MethodE1 - v0.0" );
-    
+
     // ler do teclado o valor inicial
        caracteres = IO_readln ( "Entrar com uma linha: " );
 
     // repetir para cada caractere
        tamanho = strlen ( caracteres );
- 
+
     //       inicio     teste    variacao
        for ( x = 0; x < tamanho; x = x + 1 )
        {
-            // testar se e' caractere especial
-               if ( ! ( ( 'a' <= caracteres [x] ) && ( 'z' >= caracteres [x] ) ||
-                    ( 'A' <= caracteres [x] ) && ( 'Z' >= caracteres [x] ) ||
-                    ( '0' <= caracteres [x] ) && ( '9' >= caracteres [x]) ) )
-                {
-                    // contatenar caractere nao alfanumerico
-                       //IO_concat ( caracteres [x], especiais );
-                       quantidade = quantidade + 1;
-                       
-                } // end if
+          // isolar um simbolo
+             simbolo = caracteres [ x ];
+
+          // testar se e' caractere especial
+             if ( ! ( ( 'a' <= simbolo ) && ( 'z' >= simbolo ) ||
+                    ( 'A' <= simbolo ) && ( 'Z' >= simbolo ) ||
+                    ( '0' <= simbolo ) && ( '9' >= simbolo ) ) )
+            {
+               // contatenar caractere nao alfanumerico
+                  especiais = IO_concat ( especiais, IO_toString_c (simbolo ) );
+
+            } // end if
         } // end for
 
     // contar quantidade de caracteres especiais
 
-       IO_printf ("%s%s", "\nNova cadeia de caracteres: ", quantidade );
+       IO_printf ("\nNova cadeia de caracteres: %s", especiais );
        IO_printf ( "\n" );
-       
+
     // encerrar
        IO_pause ( "Apertar ENTER para continuar" );
 
@@ -1035,7 +1041,7 @@ int main ( )
 {
     // definir dado
        int x = 0;
-    
+
     // repetir ate desejar parar
        do
        {
@@ -1062,14 +1068,14 @@ int main ( )
                IO_println ( "15 - mostrar e contar apenas os digitos      (decrescente)" );
                IO_println ( "16 - mostrar e contar apenas os caracteres especiais      " );
                IO_println ( "17 - mostrar e contar numeros [a:b] e multiplos de 5      " );
-               IO_println ( "18 - mostrar e contar numeros [a:b], multiplos de 5 e nao multiplos de 3" );
-               IO_println ( "19 - mostrar e contar numeros (a:b), cuja parte inteira e' impar" );
-               IO_println ( "20 - mostrar e contar numeros, cuja parte fracionaria fora de (a:b)" );
-               IO_println ( "21 - " );
+               IO_println ( "18 - mostrar e contar numeros [a:b], multiplos de 5 e nao multiplos de 3  " );
+               IO_println ( "19 - mostrar e contar numeros (a:b), cuja parte inteira e' impar          " );
+               IO_println ( "20 - mostrar e contar numeros, cuja parte fracionaria fora de (a:b)       " );
+               IO_println ( "21 - separar em outra cadeia e mostrar todos os simbolos nao alfanumericos" );
                IO_println ( " " );
 
                x =  IO_readint ( "Entrar com uma opcao: " );
-            
+
             // testar valor
                switch ( x )
                {
@@ -1116,7 +1122,7 @@ int main ( )
                 case 10:
                    method10 ( );
                    break;
-               
+
                 case 11:
                    method11 ( );
                    break;
@@ -1167,11 +1173,11 @@ int main ( )
                } // end switch
 
        } while ( x != 0 );
-    
+
     // encerrar
        IO_pause ( "Apertar ENTER para terminar" );
        return ( 0 );
-       
+
 } // end main ( )
 
 /*
